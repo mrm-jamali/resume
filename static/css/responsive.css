@@ -1,0 +1,39 @@
+@media screen and (max-width:768px) {
+    .banner-text .about {
+        width: 93%;
+         margin: 50px auto;
+    }
+    .img-box{
+text-align: center;
+    }
+    .img-fluid{
+        width: 335px;
+    
+    }
+    .sectioner-header{
+        margin-top: 30px;
+    }
+    .media-right{
+        margin-top: 30px;
+        
+    }
+    .media-body {
+        justify-content: center;
+    }
+.about-btn{
+    margin: auto !important;
+}
+.team-detail{
+    margin-top:70px;
+}
+.inside{
+    width: 80% !important;
+    margin: 13px auto !important;
+}
+}
+@media screen and (min-width:568px) {
+    .sectioner-header {
+        width:100%;
+    }
+
+}

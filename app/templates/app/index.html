@@ -1,0 +1,531 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>وب سایت شخصی مریم جمالی</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @font-face {
+            font-family: Farnaz;
+            src: url({% static 'farsi/BFarnaz.woff' %}) format("truetype");
+        }
+
+        body {
+            font-family: Farnaz;
+        }
+
+        @font-face {
+            font-family: Yekan;
+            src: url(farsi/BYekan.woff) format("truetype");
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div class="logo-b">
+            <a class="navbar-brand navbar-logo" href="#" style="font-family: fantasy"> WEBDESIGN </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                class="fas fa-bars"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#banner" data-scroll-nav="0">صفحه اصلی</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us" data-scroll-nav="1">درباره ما</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills" data-scroll-nav="3">مهارت ها</a></li>
+                <li class="nav-item"><a class="nav-link" href="#myservices" data-scroll-nav="4">خدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#template-selling" data-scroll-nav="5">خریدقالب</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#contact" data-scroll-nav="6">ارتباط با ما</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+
+<!-------Banner Start------->
+<section class="banner" data-scroll-index='0' id="banner"
+        style="background: url('{% static 'images/banner3.jpg' %}') no-repeat fixed center;overflow-y:hidden;">
+    <div class="banner-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12  ">
+                    <div class="banner-text ">
+                        <div class="bio">
+                            <h3 class="title-one">به وب سایت شخصی</h3>
+                            <h2 class=" title-two">مریم جمالی </h2>
+                            <h6 class=" title-three"> خوش آمدید <a href="" target="_blank" rel="dofollow"
+                                                                   class="weblink"> </a></h6>
+                        </div>
+                        <p class="banner-text  about" style="color:#5f0099;"> من یک طراح وب سایت و توسعه دهنده وب هستم که بسیار علاقمند
+                            هستم به یادگیری مباحث
+                            جدید فرانت اند و همینطور زبان های برنامه نویسی
+                            و فریم ورک های جذاب که این روزها اهمیت ویژه
+                            ای چه در برنامه نویسی بک اند و چه فرانت اند
+                            دارند.</p>
+                        <ul class="text-left">
+                            <!-- <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
+                            <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li> -->
+                            <a href="#" class="about-btn rezome-btn"> مشاهده رزومه</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 img-box">
+                    <img src="{% static 'images/m.png' %}" class="img-fluid wow fadeInUp"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <span class="svg-wave"> <img class="svg-hero" src="images/applight-wave.svg"> </span> -->
+</section>
+
+<!-------Banner End------->
+
+
+<!-------About End------->
+
+<section class="about section-padding prelative" id="about-us" data-scroll-index='1' >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sectioner-header text-center">
+                    <h3>درباره ما</h3>
+                    <span class="line"></span>
+                    <p>من یک طراح وب سایت و توسعه دهنده وب هستم که بسیار علاقمند هستم به یادگیری مباحث
+                        جدید فرانت اند و همینطور زبان های برنامه نویسی
+                        و فریم ورک های جذاب که این روزها اهمیت ویژه
+                        ای چه در برنامه نویسی بک اند و فرانت اند
+                        دارند.بـا تـوجه بـه مـاهیت برنـامه نویسـی کـه بسـیار
+                        چالش برانگیز است دارای انگیزه ،علاقه، صبوری و
+                        اراده بســیار بــالا بــرای کســب تجربــه در زمینــه وب
+                        هستم و همینطور با توجه به اینکه حوزه طراحی وب
+                        از جمله فعالیت هایی است که کار تیمی نقش به
+                        سزایی در آن دارد، علاقه فراوانی به انجام پروژه های
+                        تیمی دارم. با توجه به تلاش و ممارستی که در این
+                        مسیردارم امیدوارم به یک توسعه دهنده وب خبره
+                        تبدیل شوم و در نهایت امیدوارم با تخصص های
+                        متفاوت و قوی و روحیه کار تیمی بتوانم دراین حوزه
+                        بسیار جذاب و کارآمد و پرچالش نقش موثری را در
+                        مسیرافزایش و گسترش فعالیت شرکت های دانش
+                        .بنیان و شرکت های فعال در حوزه برنامه نویسی داشته باشم </p>
+                </div>
+
+                <!-------my-skills------->
+                <section class="feature section-padding" data-scroll-index='3' id="skills">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="sectioner-header text-center">
+                                    <h3>مهارت های من</h3>
+                                    <span class="line"></span>
+                                    <p>می تونین رو من حساب کنین</p>
+                                </div>
+                                <div class="section-content text-center">
+                                    <div class="row ">
+                                        <div class="col-md-4 col-sm-12  align-item">
+                                            {% for foo in My_skills %}
+                                                <div class="media single-feature wow fadeInUp " data-wow-delay="0.2s">
+                                                    <div class="media-body text-right media-right-margin d-flex  ">
+                                                        <div class="media-right icon-border  text-center pic-set">
+
+                                                            <img class="mx-auto" src="{{foo.img.url}}">
+                                                        </div>
+                                                        <h5 class="mr-5 "> {{ foo.title }}</h5>
+
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+
+
+                                        </div>
+
+                                        <div class="col-md-4 d-none d-md-block d-lg-block">
+                                            <div class="feature-mobile"><img src="{% static 'images/skill.jpg' %}"
+                                                                             class="img-fluid wow fadeInUp"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            {% for foo in My_skills2 %}
+                                                <div class="media single-feature wow fadeInUp " data-wow-delay="0.2s">
+                                                    <div class="media-body text-right media-right-margin d-flex  ">
+                                                        <div class="media-right icon-border  text-center pic-set">
+                                                            <!-- <span class="fa fa-bolt" aria-hidden="true"></span> -->
+                                                            <img src="{{ foo.img.url }}">
+                                                        </div>
+                                                        <h5 class="mr-5 ">{{ foo.title }}</h5>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-------my skills End------->
+
+
+                <!-- our services -->
+
+                <div class="sectioner-header text-center mt-5" data-scroll-index="4" id="myservices">
+                    <h3 class=""> خدمات من</h3>
+                    <span class="line"></span>
+                    <p>کارهایی که من می تونم برات انجام بدم</p>
+                </div>
+                <div class="container-se">
+                    {% for foo in My_service %}
+                        <div class="box" style="--clr:#A884FC;">
+                            <div class="content">
+                                <div class="icon">
+                                    <ion-icon name="brush"></ion-icon>
+                                </div>
+                                <div class="text">
+                                    <h3>{{ foo.title }}</h3>
+                                    <p>{{ foo.caption }}</p>
+                                    <p>{{ foo.desc }}</p>
+                                    <a href="#">{{ foo.btn }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+                </div>
+
+                <!-- our services end -->
+
+
+                <!-- future planes -->
+
+                <div class="sectioner-header text-center">
+                    <h3> فعالیت های آینده </h3>
+                    <span class="line"></span>
+                    <p>برنامه های آینده مون هم از این قراره </p>
+                </div>
+                <div class="section-content ">
+                    <div class="row">
+                        {% for foo in Future_plane %}
+                            <div class="col-md-4">
+                                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                                    <i class="fa fa-file-code-o" style="font-size:36px"></i>
+
+
+                                    <!-- <i class="fa fa-life-ring"
+                                     aria-hidden="true"></i>
+                                      -->
+                                    <h5> {{ foo.title }} </h5>
+                                    <p class="text-center">{{ foo.desc }}
+                                    </p>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+
+                    </div>
+                    <div class="text-center"><a href="#" class="about-btn ">مطالعه بیشتر</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------future planes End------->
+
+<!-------selling templates start------->
+<section class="video-section prelative text-center white" data-scroll-index="5" id="template-selling" style="background: url('{% static 'images/video-bg.jpg' %}') no-repeat fixed center;">
+    <div class="section-padding video-overlay">
+        <div class="container">
+            <h3> برای خرید قالب های جذاب کلیک کن</h3>
+            <div class="text-center"><a href="#" class="about-btn template-btn">خرید قالب </a></div>
+            <div class="video-popup">
+                <div class="video-src">
+                    <div class="iframe-src">
+                        <iframe src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------selling templates End------->
+
+
+<!-------why u can trust me? Start------->
+<section class="team section-padding" data-scroll-index=''>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sectioner-header text-center">
+                    <h3> چراهای متداول </h3>
+                    <span class="line"></span>
+                    <p>چرا می تونی به من اعتماد کنی؟</p>
+                </div>
+                <div class="section-content text-center">
+                    <div class="row">
+                        {% for foo in Why_trust %}
+                        <div class="col-md-4">
+                            <div class="team-detail wow bounce" data-wow-delay="0.2s">
+                                <img src="{{ foo.img.url }}" class="img-fluid"/>
+                                <h4>{{ foo.title }}</h4>
+
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- why u can trust me? end -->
+
+
+<!-------Contact Start------->
+<section class="contact section-padding" data-scroll-index='6' id="contact">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="sectioner-header text-center ">
+                    <h3> ارتباط با ما</h3>
+                    <span class="line"></span>
+                </div>
+                <div class="section-content">
+                    <div class="row ">
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <div class=" email-contact text-center">
+                                <!-- <p>اطلاعات تماس من</p> -->
+                            </div>
+
+                            <div class="second-part-contact mt-4 mx-auto d-flex">
+                                <div class="addresses  ">
+                                    <div class="addrs mt-5">
+                                        <div class="inside ">
+                                            <span> تلفن تماس</span>
+                                            <a href="#">
+                                                <img src="{% static 'images/calling.gif' %}">
+                                            </a>
+                                            <span>
+                          09919376959
+                        </span>
+                                        </div>
+
+                                        <div class="inside ">
+                                            <span id="email">ایمیل</span>
+                                            <a href="#"> <img src="{% static 'images/email.gif' %}"></a>
+                                            <span class="email">
+                          jamali8820@yahoo.com
+                        </span>
+                                        </div>
+                                        <div class="inside ">
+                                            <span id="adress">آدرس</span>
+                                            <a href="#"> <img src="{% static 'images/locations.gif' %}"></a>
+                                            <span>
+
+                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- commants start -->
+
+                        <div class="col-sm-12 col-md-12 col-lg-6 ">
+                            <div class="title-contact text-center mt-md-3 ">
+                                <p>اگه انتقاد یا پیشنهادی داری اینجا برام بنویس</p>
+                            </div>
+
+                            <form id="contact_form" action="">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="your_name" class="form-input w-100" name="full-name"
+                                               placeholder="نام"
+                                               required>
+                                    </div>
+                                    <div class="col">
+                                        <input type="email" id="email" class="form-input w-100" name="email"
+                                               placeholder="ایمیل" required>
+                                    </div>
+                                </div>
+                                <input type="text" id="subject" class="form-input w-100" name="subject"
+                                       placeholder="موضوع">
+                                <textarea class="form-input w-100" id="message" placeholder="نظرتو بگو"
+                                          name="message"></textarea>
+                                <button class="btn-grad w-100 text-uppercase btn-cmd" type="submit" name="button">ثبت
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------Contact End------->
+
+<!-------social media ------->
+<section class="download section-padding mt-4">
+    <div class="container-down">
+        <div class="row row-new">
+
+            <div class="col-md-12 ">
+                <div class="section-content text-center">
+            <span class="social-net">
+              <div id="social-text">
+                <p> ما را در شبکه های اجتماعی دنبال کنید</p>
+              </div>
+              <div id="social-option">
+                <ul class="wrapper">
+                  <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </li>
+
+                  <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                  </li>
+                  <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </li>
+                  <li class="icon github">
+                    <a href="https://github.com/maryam">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
+                  </a>
+                  </li>
+
+                  <li class="icon youtube">
+                    <span class="tooltip">Youtube</span>
+                    <span><i class="fab fa-youtube"></i></span>
+                  </li>
+                </ul>
+              </div>
+
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------footer end------->
+
+<footer class="footer-copy">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>تمامی حقوق مادی و معنوی این سایت متعلق به مریم جمالی می باشد و هرگونه کپی برداری غیرقانونی محسوب
+                    خواهد شد</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- scrollIt js -->
+<script src="{% static 'js/scrollIt.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+<script>
+    wow = new WOW();
+    wow.init();
+    $(document).ready(function (e) {
+
+        $('#video-icon').on('click', function (e) {
+            e.preventDefault();
+            $('.video-popup').css('display', 'flex');
+            $('.iframe-src').slideDown();
+        });
+        $('.video-popup').on('click', function (e) {
+            var $target = e.target.nodeName;
+            var video_src = $(this).find('iframe').attr('src');
+            if ($target != 'IFRAME') {
+                $('.video-popup').fadeOut();
+                $('.iframe-src').slideUp();
+                $('.video-popup iframe').attr('src', " ");
+                $('.video-popup iframe').attr('src', video_src);
+            }
+        });
+
+        $('.slider').bxSlider({
+            pager: false
+        });
+    });
+
+    $(window).on("scroll", function () {
+
+        var bodyScroll = $(window).scrollTop(),
+            navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+            $('.navbar-logo img').attr('src', 'images/logo-black.png');
+            navbar.addClass("nav-scroll");
+
+        } else {
+            $('.navbar-logo img').attr('src', 'images/logo.png');
+            navbar.removeClass("nav-scroll");
+        }
+
+    });
+    $(window).on("load", function () {
+        var bodyScroll = $(window).scrollTop(),
+            navbar = $(".navbar");
+
+        if (bodyScroll > 50) {
+            $('.navbar-logo img').attr('src', 'images/logo-black.png');
+            navbar.addClass("nav-scroll");
+        } else {
+            $('.navbar-logo img').attr('src', 'images/logo-white.png');
+            navbar.removeClass("nav-scroll");
+        }
+
+        $.scrollIt({
+
+            easing: 'swing', // the easing function for animation
+            scrollTime: 900, // how long (in ms) the animation takes
+            activeClass: 'active', // class given to the active nav element
+            onPageChange: null, // function(pageIndex) that is called when page is changed
+            topOffset: -63
+        });
+    });
+</script>
+</body>
+
+</html>
